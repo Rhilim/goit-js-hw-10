@@ -59,7 +59,7 @@ function markUp(arr) {
       <table class='table'>
       <tr>
       <td>
-      <img class="img-cat" src="${imgUrl}" width="440" height="400" loading="lazy">
+      <img class="img-cat" src="${imgUrl}" width="440" height="400" loading="lazy" style='border: 3px orange solid'>
       </td>
       <td class="text-cell">
       <div class="text-desc">
@@ -104,10 +104,3 @@ breedSelect.style.cssText =
   'text-align: center; background-color: #FFEFBA; font-weight: 600; font-family: Helvetica'; 
 
 catContainer.style.cssText = 'text-align: left; border: 1px solid #FFEFBA';
-
-loader.style.cssText = `width: 96px; box-sizing: content-box; height: 48px; background: #FFF; border-color: #de3500; border-style: solid; border-width: 2px 2px 50px 2px; border-radius: 100%; position: relative; animation: 3s yinYang linear infinite`;
-loader.style.cssText = `:before:  content: ""; position: absolute; top: 50%; left: 0; background: #FFF; border: 18px solid #de3500; border-radius: 100%; width: 12px; height: 12px; box-sizing: content-box`;
-loader.style.cssText = `:after: content: ""position: absolute-top: 50%left: 50%background: #de3500border: 18px solid #FFF; border-radius: 100%; width: 12px; height: 12px box-sizing: content-box`;
-loader.style.cssText = `@keyframes yinYang {
-  100%{transform: rotate(360deg)}
-}`
