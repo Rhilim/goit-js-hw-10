@@ -1,10 +1,6 @@
 import axios from 'axios';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SlimSelect from 'slim-select';
-import 'select-pure';
-// new SlimSelect({
-//   select: '#select',
-// });
 
 axios.defaults.headers.common['x-api-key'] =
   'live_6oipNaEf4MhA3t1QKH9rU8tuRomBydjiP5ZsBkmsecdwgBpHv8VKGluJCVsYRtAH';
@@ -60,7 +56,7 @@ function markUp(arr) {
 <table class='table'>
       <tr>
       <td>
-      <img class="img-cat" src="${imgUrl}" width="440" height="400" loading="lazy" style='border: 3px orange solid'>
+      <img class="img-cat" src="${imgUrl}" width="440" height="400" loading="lazy" style='border: 2px orange solid'>
       </td>
       <td class="text-cell">
       <div class="text-desc" style='margin: 50px'>
@@ -99,9 +95,9 @@ function clearCatContainer() {
 
 const bodyEl = document.querySelector('body');
 bodyEl.style.cssText =
-  'background-image: linear-gradient(to right, #FFEFBA,  #FFFFFF); text-align: center';
+  'background-image: linear-gradient(to right, #ff7e5f, #feb47b); text-align: center';
 
 breedSelect.style.cssText =
   'text-align: center; background-color: #FFEFBA; font-weight: 600; font-family: Helvetica; appearance: none; border-radius: 0; border: 1px solid #000; border-radius: 4px; padding: 1rem 1rem 1rem 1rem';
 
-catContainer.style.cssText = 'text-align: left; border: 1px solid #FFEFBA; margin: 150px';
+catContainer.style.cssText = 'text-align: left; margin: 150px';
