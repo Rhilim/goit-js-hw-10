@@ -1,5 +1,6 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SlimSelect from 'slim-select';
+import 'select-pure';
 // new SlimSelect({
 //   select: '#select'
 // });
