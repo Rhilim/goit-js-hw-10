@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import SlimSelect from 'slim-select';
+// import SlimSelect from 'slim-select';
 
 axios.defaults.headers.common['x-api-key'] =
   'live_6oipNaEf4MhA3t1QKH9rU8tuRomBydjiP5ZsBkmsecdwgBpHv8VKGluJCVsYRtAH';
@@ -12,6 +12,10 @@ import {
 } from './cat-api.js';
 
 fetchBreeds();
+
+// new SlimSelect({
+//   select: breedSelect,
+// });
 
 const catContainer = document.querySelector('.cat-info');
 
@@ -56,7 +60,7 @@ function markUp(arr) {
 <table class='table'>
       <tr>
       <td>
-      <img class="img-cat" src="${imgUrl}" width="440" height="400" loading="lazy" style='border: 2px orange solid'>
+      <img class="img-cat" src="${imgUrl}" width="440" loading="lazy" style='border: 2px orange solid'>
       </td>
       <td class="text-cell">
       <div class="text-desc" style='margin: 50px'>
